@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sign Up</title>
+    <body>
+    <form>
+        <h1>Welcome!</h1>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <p id="username">Username:
+            <input type="text" name="username" size="15" maxlength="30"required="required" />
+        </p>
+        <p id="password">Password:
+           <input type="password" name="password" size="15" maxlength="30" required="required" />
+        </p>
+        <p id="email_id">email address:
+            <input type="email" name="email" size="30" maxlength="30" />
+        </p>
+        <p class="gender">
+            <label>Age:<input type="text"name="age" maxlength="3" /></label><br />
+            Gender:
+            <input id="female" type="radio"name="gender"value="f">
+            <label for="female">Female</label>
+            <input id="male" type="radio"name="gender"value="m">
+            <label for="male">Male</label>         
+        </p>
+            <label id="dob">Date of Birth:<input type="date"name="DOB" /></label>
+        <p>
+        </p>
+        <p id="yourself">About yourself:
+            <textarea name="about" cols="20" rows="5">About yourself for your home page...</textarea>
+        </p>
+        </fieldset>
+        <fieldset>
+            <legend>Interests</legend>
+        <p class="genre">Select your favourite movie genre:<br />
+            <input type="radio" name="genre" value="Drama"checked="checked" />Drama
+            <input type="radio" name="genre" value="Action" />Action
+            <input type="radio" name="genre" value="Sci Fi" />Sci fi
+        </p>
+        <p id="service">Select your favourite music service(s):<br/>
+            <input type="checkbox" name="service" value="Spotify" checked="checked" />Spotify
+            <input type="checkbox" name="service" value="iTunes" />iTunes
+            <input type="checkbox" name="service" value="FM" />FM
+        </p>
+        <p id="service">What device do you primarly use to visit this blog?
+        <select name="devices">
+        <option value="iPhone">iPhone</option>
+        <option value="iPad">iPad</option>
+        <option value="Desktop">Desktop</option>
+        <option value="Android">Android Devices</option>
+        </select>
+        </p>
+        <p id="devices">What other devices do you use?
+        <select name="multiple_devices"multiple="multiple" size="3">
+        <option value="iPhone">iPhone</option>
+        <option value="iPad">iPad</option>
+        <option value="Desktop">Desktop</option>
+        <option value="Android">Android Devices</option>    
+        </select>
+        </p>
+        <p id="song">Want to have your favourite song as your background theme?<br>
+           Upload your song in MP3format:<br />
+            <input type="file"name="user_song" /><br />
+            <input type="Submit"value="Upload" />
+        </p>
+        <p id="website">Your Website address:
+            <input type="url"name="website"/>
+            <input type="Submit"value="Submit" />
+        </p>
+        <p id="subscribe">Subscribe to our monthly free movieticket contest ?
+            <input type="text"name="email" />
+            <input type="image"src="Images/Subscribe.jpg"/>
+        </p>
+            </fieldset>
+        <p id="submit">
+           <input type="submit" name="sign up" Value="Sign Up" />
+        </p>
+        
+    </form>
+    </body>
+</head>
+</html>
